@@ -5,19 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather App</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <main>
             <div id="container">
                 <h1>Weather app</h1>
-                <div id="search-group">
-                    <div id="search-box">
+                <form id="search-group" autocomplete="off"> <!-- Entire search group, height is responsive -->
+                    <div id="search-box"> <!-- Just the search box elements -->
                         <img id="search-img" src="./Weather App - Images/search.png"></img>
-                        <input id="search" placeholder="Enter city name">                            
+                        <input type="text" id="search" placeholder="Enter city name">                            
                     </div>
-                </div>
+                    <ul id="searchSuggest"></ul> <!-- Autosuggested list -->
+                </form>
             </div>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
