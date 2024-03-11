@@ -86,3 +86,8 @@ h1 {
 .list-items {
     padding: 10px 5px;
 }
+
+.list-items:hover {
+    background: linear-gradient( to left, #320269 25%, #14e1f7) !important;
+    color: white !important;
+}
