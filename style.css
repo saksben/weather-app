@@ -4,6 +4,8 @@ html {
 
 body {
     background: #1a1919;
+    color: white;
+    font-family: arial;
 }
 
 h1 {
@@ -73,9 +75,9 @@ h1 {
 }
 
 #searchSuggest li:first-child {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: none;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border: none !important;
 }
 
 #searchSuggest li:last-child {
@@ -90,4 +92,119 @@ h1 {
 .list-items:hover {
     background: linear-gradient( to left, #320269 25%, #14e1f7) !important;
     color: white !important;
+}
+
+.profileBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainBox {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    margin-right: 40px;
+    background: url("./Weather App - Images/icons.png") no-repeat;
+    box-sizing: border-box;
+}
+
+.mainIcon {
+    margin: 0;
+    padding: 0;
+}
+
+.mainStats h2,
+.mainStats h3 {
+    margin: 0;
+}
+
+.mainTemp {
+    font-size: 50px;
+}
+
+.nameBox {
+    margin-top: 50px;
+    display: flex;
+}
+
+.location-icon {
+    height: 25px; width: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.nameText {
+    font-size: 30px;
+}
+
+.statsBox {
+    margin-top: 90px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.statMini {
+    display: flex;
+    flex-direction: column;
+}
+
+.statMini h3,
+.statMini h4 {
+    margin: 0;
+}
+
+.statIcon img {
+    width: 30px;
+}
+
+.statStat {
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.statText {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Styling for image sprite selections for weather icon */
+.clear {
+    background-position: -29px -27px;
+    width: 72px;
+    height: 73px;
+}
+
+.cloudy {
+    background-position: -23px -148px;
+    width: 84px;
+    height: 49px;
+}
+
+.snowy {
+    background-position: -287px -252px;
+    width: 86px;
+    height: 85px;
+}
+
+.rainy {
+    background-position: -418px -267px;
+    width: 84px;
+    height: 65px;
+}
+
+.stormy {
+    background-position: -417px -374px;
+    width: 85px;
+    height: 77px;
 }
